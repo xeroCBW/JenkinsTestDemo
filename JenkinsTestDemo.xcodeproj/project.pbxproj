@@ -138,7 +138,7 @@
 					D0ECD4541E09860700DE0A81 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3ZDX854EGM;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -350,14 +350,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3ZDX854EGM;
 				INFOPLIST_FILE = JenkinsTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cbw.JenkinsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "12c2c766-5fd8-401f-9ebb-34d80b05eb0e";
+				PROVISIONING_PROFILE_SPECIFIER = "JenkinsDemo-Development";
 			};
 			name = Debug;
 		};
@@ -366,15 +366,15 @@
 			baseConfigurationReference = AE4D6B473DBE413E09FCFC46 /* Pods-JenkinsTestDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 3ZDX854EGM;
 				INFOPLIST_FILE = JenkinsTestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cbw.JenkinsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "3bb87a6f-af71-4f8f-b11a-d2f1c731d2ca";
+				PROVISIONING_PROFILE_SPECIFIER = "3ZDX854EGM.com.cbw.JenkinsDemo-Distribution";
 			};
 			name = Release;
 		};
