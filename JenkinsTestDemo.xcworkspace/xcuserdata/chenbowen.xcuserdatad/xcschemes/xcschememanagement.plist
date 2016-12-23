@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
-	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D0ECD4541E09860700DE0A81</key>
+		<key>JenkinsTestDemo.xcscheme_^#shared#^_</key>
 		<dict>
-			<key>primary</key>
+			<key>isShown</key>
 			<true/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </dict>
