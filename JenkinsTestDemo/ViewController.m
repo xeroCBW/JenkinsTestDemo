@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *schemeLabel;
+@property (weak, nonatomic) IBOutlet UITextView *infoTextView;
 
 @end
 
@@ -32,13 +33,15 @@
     
 #endif
     
+
+    NSDictionary *infoDic = NSBundle.mainBundle.infoDictionary;
     
-    NSBundle *bundle = [NSBundle mainBundle];
-    NSDictionary *info = [bundle infoDictionary];
-    NSString *prodName = [info objectForKey:@"CFBundleDisplayName"];
+    NSString *info = [NSString stringWithFormat:@"%@",infoDic];
     
     
-    self.schemeLabel.text = [NSString stringWithFormat:@"%@-%@",prodName ,configuration];
+    self.schemeLabel.text = [NSString stringWithFormat:@"%@",configuration];
+    
+    self.infoTextView.text = info;
     
 }
 
