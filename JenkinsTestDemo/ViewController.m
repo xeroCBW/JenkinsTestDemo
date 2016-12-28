@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *schemeLabel;
 
 @end
 
@@ -17,6 +18,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *configuration = nil;
+    
+    
+#ifdef DEBUG
+    
+    configuration = @"DEBUG";
+    
+#else
+    
+    configuration = @"RELEASE";
+    
+#endif
+    
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSDictionary *info = [bundle infoDictionary];
+    NSString *prodName = [info objectForKey:@"CFBundleDisplayName"];
+    
+    
+    self.schemeLabel.text = [NSString stringWithFormat:@"%@-%@",prodName ,configuration];
+    
 }
 
 
