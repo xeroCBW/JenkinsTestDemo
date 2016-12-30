@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BF851FB43C7216E39B4D62AC /* libPods-JenkinsTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A327CD9338316370A449C3B0 /* libPods-JenkinsTestDemo.a */; };
+		D078EE061E1640AC00892682 /* BaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D078EE031E1640AC00892682 /* BaseInfoViewController.m */; };
+		D078EE071E1640AC00892682 /* BaseInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D078EE041E1640AC00892682 /* BaseInfoViewController.xib */; };
+		D078EE0A1E16441600892682 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D078EE091E16441600892682 /* LocationViewController.m */; };
+		D078EE0C1E1645DF00892682 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D078EE0B1E1645DF00892682 /* LocationViewController.xib */; };
+		D078EE0F1E16593200892682 /* ReverseGeologyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D078EE0E1E16593200892682 /* ReverseGeologyTool.m */; };
 		D0ECD45A1E09860700DE0A81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD4591E09860700DE0A81 /* main.m */; };
 		D0ECD45D1E09860700DE0A81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD45C1E09860700DE0A81 /* AppDelegate.m */; };
 		D0ECD4601E09860700DE0A81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD45F1E09860700DE0A81 /* ViewController.m */; };
@@ -20,6 +25,14 @@
 		319F9F41C62A0309E25583D9 /* Pods-JenkinsTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JenkinsTestDemo/Pods-JenkinsTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A327CD9338316370A449C3B0 /* libPods-JenkinsTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JenkinsTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4D6B473DBE413E09FCFC46 /* Pods-JenkinsTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsTestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JenkinsTestDemo/Pods-JenkinsTestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D078EE021E1640AC00892682 /* BaseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInfoViewController.h; sourceTree = "<group>"; };
+		D078EE031E1640AC00892682 /* BaseInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInfoViewController.m; sourceTree = "<group>"; };
+		D078EE041E1640AC00892682 /* BaseInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseInfoViewController.xib; sourceTree = "<group>"; };
+		D078EE081E16441600892682 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		D078EE091E16441600892682 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		D078EE0B1E1645DF00892682 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		D078EE0D1E16593200892682 /* ReverseGeologyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseGeologyTool.h; sourceTree = "<group>"; };
+		D078EE0E1E16593200892682 /* ReverseGeologyTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseGeologyTool.m; sourceTree = "<group>"; };
 		D0ECD4551E09860700DE0A81 /* JenkinsTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinsTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0ECD4591E09860700DE0A81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0ECD45B1E09860700DE0A81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +74,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D078EDFB1E163EAA00892682 /* ChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D078EE011E1640AC00892682 /* BaseInfo */,
+				D078EE051E1640AC00892682 /* Location */,
+			);
+			path = ChildViewController;
+			sourceTree = "<group>";
+		};
+		D078EE011E1640AC00892682 /* BaseInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D078EE021E1640AC00892682 /* BaseInfoViewController.h */,
+				D078EE031E1640AC00892682 /* BaseInfoViewController.m */,
+				D078EE041E1640AC00892682 /* BaseInfoViewController.xib */,
+			);
+			path = BaseInfo;
+			sourceTree = "<group>";
+		};
+		D078EE051E1640AC00892682 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				D078EE081E16441600892682 /* LocationViewController.h */,
+				D078EE091E16441600892682 /* LocationViewController.m */,
+				D078EE0B1E1645DF00892682 /* LocationViewController.xib */,
+				D078EE0D1E16593200892682 /* ReverseGeologyTool.h */,
+				D078EE0E1E16593200892682 /* ReverseGeologyTool.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		D0ECD44C1E09860700DE0A81 = {
 			isa = PBXGroup;
 			children = (
@@ -82,14 +126,9 @@
 		D0ECD4571E09860700DE0A81 /* JenkinsTestDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D0ECD45B1E09860700DE0A81 /* AppDelegate.h */,
-				D0ECD45C1E09860700DE0A81 /* AppDelegate.m */,
+				D078EDFB1E163EAA00892682 /* ChildViewController */,
 				D0ECD45E1E09860700DE0A81 /* ViewController.h */,
 				D0ECD45F1E09860700DE0A81 /* ViewController.m */,
-				D0ECD4611E09860700DE0A81 /* Main.storyboard */,
-				D0ECD4641E09860700DE0A81 /* Assets.xcassets */,
-				D0ECD4661E09860700DE0A81 /* LaunchScreen.storyboard */,
-				D0ECD4691E09860700DE0A81 /* Info.plist */,
 				D0ECD4581E09860700DE0A81 /* Supporting Files */,
 			);
 			path = JenkinsTestDemo;
@@ -98,6 +137,12 @@
 		D0ECD4581E09860700DE0A81 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0ECD45B1E09860700DE0A81 /* AppDelegate.h */,
+				D0ECD45C1E09860700DE0A81 /* AppDelegate.m */,
+				D0ECD4611E09860700DE0A81 /* Main.storyboard */,
+				D0ECD4641E09860700DE0A81 /* Assets.xcassets */,
+				D0ECD4661E09860700DE0A81 /* LaunchScreen.storyboard */,
+				D0ECD4691E09860700DE0A81 /* Info.plist */,
 				D0ECD4591E09860700DE0A81 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -166,7 +211,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0ECD4681E09860700DE0A81 /* LaunchScreen.storyboard in Resources */,
+				D078EE071E1640AC00892682 /* BaseInfoViewController.xib in Resources */,
 				D0ECD4651E09860700DE0A81 /* Assets.xcassets in Resources */,
+				D078EE0C1E1645DF00892682 /* LocationViewController.xib in Resources */,
 				D0ECD4631E09860700DE0A81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0ECD4601E09860700DE0A81 /* ViewController.m in Sources */,
+				D078EE061E1640AC00892682 /* BaseInfoViewController.m in Sources */,
 				D0ECD45D1E09860700DE0A81 /* AppDelegate.m in Sources */,
+				D078EE0F1E16593200892682 /* ReverseGeologyTool.m in Sources */,
 				D0ECD45A1E09860700DE0A81 /* main.m in Sources */,
+				D078EE0A1E16441600892682 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

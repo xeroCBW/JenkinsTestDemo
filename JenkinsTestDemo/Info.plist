@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>想在使用期间使用您的 GPS</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>想一直使用您的 GPS</string>
+	<key>NSLocationUsageDescription</key>
+	<string>想使用您的 GPS</string>
 </dict>
 </plist>

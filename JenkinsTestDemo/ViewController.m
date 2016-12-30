@@ -8,9 +8,12 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *schemeLabel;
-@property (weak, nonatomic) IBOutlet UITextView *infoTextView;
+
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong)NSMutableArray *listArr;
 
 @end
 
@@ -18,38 +21,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    NSString *configuration = nil;
-    
-    
-#ifdef DEBUG
-    
-    configuration = @"DEBUG";
-    
-#else
-    
-    configuration = @"RELEASE";
-    
-#endif
-    
-
-    NSDictionary *infoDic = NSBundle.mainBundle.infoDictionary;
-    
-    NSString *info = [NSString stringWithFormat:@"%@",infoDic];
-    
-    
-    self.schemeLabel.text = [NSString stringWithFormat:@"%@",configuration];
-    
-    self.infoTextView.text = info;
+  
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - datasource
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return self.listArr.count;
 }
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [[UITableViewCell alloc]init];
+    cell.textLabel.text = self.listArr[indexPath.row];
+    return cell;
+}
+
+#pragma mark - delegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //通过类来创建对象
+    NSString *viewControllerString = self.listArr[indexPath.row];
+    Class viewController = NSClassFromString(viewControllerString);
+    
+    [self.navigationController pushViewController:[[viewController alloc]init] animated:YES];
+    
+}
+
+#pragma mark - lazy
+
+-(NSMutableArray *)listArr{
+    
+    if (_listArr == nil) {
+        
+        _listArr = [NSMutableArray array];
+        [_listArr addObject:@"BaseInfoViewController"];//LocationViewController
+        [_listArr addObject:@"LocationViewController"];
+        
+    }
+    return _listArr;
+}
 
 @end
