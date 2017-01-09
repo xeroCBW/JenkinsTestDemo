@@ -470,7 +470,7 @@
 			baseConfigurationReference = E07F229762FE52169CDBA889 /* Pods-JenkinsTestDemo.debug-test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				AppDisplayName = "jenkinsDemo-测试";
+				AppDisplayName = "jenkins-测试";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3ZDX854EGM;
 				INFOPLIST_FILE = JenkinsTestDemo/Info.plist;
