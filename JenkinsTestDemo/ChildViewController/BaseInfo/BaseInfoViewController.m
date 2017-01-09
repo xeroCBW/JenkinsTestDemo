@@ -22,8 +22,13 @@
     
 #ifdef DEBUG
     configuration = @"DEBUG";
+    //设置测试环境的 url
+#elif ADHOC
+    configuration = @"ADHOC";
+    //往后可以在这里设置生产环境的一些 url
 #else
-    configuration = @"RELEASE";
+    configuration = @"APPSTORE";
+    //设置提交版本的 url
 #endif
     
     NSDictionary *infoDic = NSBundle.mainBundle.infoDictionary;
