@@ -58,7 +58,8 @@
         
         _listArr = [NSMutableArray array];
         [_listArr addObject:@"BaseInfoViewController"];//LocationViewController
-        [_listArr addObject:@"LocationViewController"];
+        [_listArr addObject:@"LocationViewController"];//
+        [_listArr addObject:@"MWDemoViewController"];
         
     }
     return _listArr;
