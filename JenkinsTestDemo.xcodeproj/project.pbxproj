@@ -13,6 +13,7 @@
 		D078EE0A1E16441600892682 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D078EE091E16441600892682 /* LocationViewController.m */; };
 		D078EE0C1E1645DF00892682 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D078EE0B1E1645DF00892682 /* LocationViewController.xib */; };
 		D078EE0F1E16593200892682 /* ReverseGeologyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D078EE0E1E16593200892682 /* ReverseGeologyTool.m */; };
+		D0A1BF9B1E5983E400776FB8 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A1BF9A1E5983E400776FB8 /* Menu.m */; };
 		D0BF7CE61E57071C006B5705 /* MWDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BF7CE51E57071C006B5705 /* MWDemoViewController.m */; };
 		D0ECD45A1E09860700DE0A81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD4591E09860700DE0A81 /* main.m */; };
 		D0ECD45D1E09860700DE0A81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD45C1E09860700DE0A81 /* AppDelegate.m */; };
@@ -35,6 +36,8 @@
 		D078EE0B1E1645DF00892682 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
 		D078EE0D1E16593200892682 /* ReverseGeologyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseGeologyTool.h; sourceTree = "<group>"; };
 		D078EE0E1E16593200892682 /* ReverseGeologyTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseGeologyTool.m; sourceTree = "<group>"; };
+		D0A1BF991E5983E400776FB8 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		D0A1BF9A1E5983E400776FB8 /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		D0BF7CE41E57071C006B5705 /* MWDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWDemoViewController.h; sourceTree = "<group>"; };
 		D0BF7CE51E57071C006B5705 /* MWDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWDemoViewController.m; sourceTree = "<group>"; };
 		D0ECD4551E09860700DE0A81 /* JenkinsTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JenkinsTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +123,8 @@
 			children = (
 				D0BF7CE41E57071C006B5705 /* MWDemoViewController.h */,
 				D0BF7CE51E57071C006B5705 /* MWDemoViewController.m */,
+				D0A1BF991E5983E400776FB8 /* Menu.h */,
+				D0A1BF9A1E5983E400776FB8 /* Menu.m */,
 			);
 			path = MWPhotoBrowser;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				D0BF7CE61E57071C006B5705 /* MWDemoViewController.m in Sources */,
 				D078EE0F1E16593200892682 /* ReverseGeologyTool.m in Sources */,
 				D0ECD45A1E09860700DE0A81 /* main.m in Sources */,
+				D0A1BF9B1E5983E400776FB8 /* Menu.m in Sources */,
 				D078EE0A1E16441600892682 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
