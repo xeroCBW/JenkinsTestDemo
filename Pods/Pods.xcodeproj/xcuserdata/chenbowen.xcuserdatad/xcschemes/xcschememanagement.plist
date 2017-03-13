@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MWPhotoBrowser-MWPhotoBrowser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,7 +52,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>038A50E15CD8942E0711220432490795</key>
+		<key>0D56E9EE1B1FF8AEAEC1D12AACA8EC33</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -58,6 +63,11 @@
 			<true/>
 		</dict>
 		<key>4FBF477249B9E3E2E4C9426475F09150</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91629E1725C13AEA64D44C46E4D9DA31</key>
 		<dict>
 			<key>primary</key>
 			<true/>

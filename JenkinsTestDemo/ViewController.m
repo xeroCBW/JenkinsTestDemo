@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import <MJRefresh.h>
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -24,6 +24,32 @@
   
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.rowHeight = 300;
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreDate)];
+    
+}
+
+
+- (void)loadMoreDate{
+    
+    [self.tableView.mj_footer endRefreshingWithNoMoreData];
+    
+    [self.tableView reloadData];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        
+//        NSMutableArray  *arr = [NSMutableArray array];
+//        
+//        for (int i = 0; i < 20; i ++) {
+//            
+//            [arr addObject:[NSString stringWithFormat:@"%d",i]];
+//        }
+//        
+//        [self.listArr addObjectsFromArray:arr.mutableCopy];
+//        
+//        [self.tableView reloadData];
+//    });
+
     
 }
 
